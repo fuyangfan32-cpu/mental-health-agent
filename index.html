@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心理咨询前置情绪采集助手</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif; background: #FAF8F4; }
+.hero { padding: 56px 32px 40px; text-align: center; }
+.badge { display: inline-block; background: #F0EAD6; color: #7A5C2E; font-size: 12px; padding: 4px 14px; border-radius: 20px; border: 0.5px solid #D6C9A8; margin-bottom: 20px; }
+.hero h1 { font-size: 28px; font-weight: 500; color: #3D2E1A; line-height: 1.35; margin-bottom: 12px; }
+.hero p { font-size: 15px; color: #7A6A55; line-height: 1.7; max-width: 480px; margin: 0 auto 32px; }
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 0 32px 40px; max-width: 720px; margin: 0 auto; }
+.feature-card { background: #FFFFFF; border: 0.5px solid #E8DFC8; border-radius: 12px; padding: 20px 16px; }
+.feature-icon { width: 36px; height: 36px; border-radius: 10px; background: #F5EDD8; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; }
+.feature-icon i { font-size: 18px; color: #9B7A3A; }
+.feature-card h3 { font-size: 13px; font-weight: 500; color: #3D2E1A; margin-bottom: 6px; }
+.feature-card p { font-size: 12px; color: #9A8A73; line-height: 1.6; }
+.divider { height: 0.5px; background: #E8DFC8; margin: 0 32px; }
+.chat-section { padding: 32px; max-width: 720px; margin: 0 auto; }
+.chat-label { font-size: 12px; color: #9A8A73; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
+.chat-label i { font-size: 14px; color: #B8976A; }
+.chat-wrapper { border-radius: 14px; overflow: hidden; border: 0.5px solid #E0D4B8; background: #FFFFFF; height: 520px; }
+iframe { width: 100%; height: 100%; border: none; display: block; }
+.footer { text-align: center; padding: 24px 32px; }
+.footer p { font-size: 12px; color: #B5A58A; }
+@media (max-width: 560px) {
+  .features { grid-template-columns: 1fr; }
+  .hero { padding: 40px 20px 28px; }
+  .features { padding: 0 20px 28px; }
+  .chat-section { padding: 20px; }
+}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="badge">AI 心理咨询辅助工具</div>
+  <h1>在咨询开始前，<br>先好好说说你的感受</h1>
+  <p>通过自然对话，温和采集你的情绪状态与近期困扰，生成结构化洞察摘要，帮助咨询师更快理解你。</p>
+</div>
+<div class="features">
+  <div class="feature-card">
+    <div class="feature-icon"><i class="ti ti-heart"></i></div>
+    <h3>前置情绪采集</h3>
+    <p>用对话代替问卷，低压力自然表达，捕捉碎片化但关键的心理信息</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon"><i class="ti ti-chart-dots"></i></div>
+    <h3>结构化情绪分析</h3>
+    <p>自动识别情绪类型、强度与触发事件，将非结构化表达转化为可读数据</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon"><i class="ti ti-file-description"></i></div>
+    <h3>咨询前洞察摘要</h3>
+    <p>生成专业摘要供咨询师参考，提升咨询效率，帮助问题更快聚焦</p>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="chat-section">
+  <p class="chat-label"><i class="ti ti-message-circle"></i>你好，和我说说最近的状态吧</p>
+  <div class="chat-wrapper">
+    <iframe src="https://code.coze.cn/web-sdk/7643658950528843811" title="心理咨询前置情绪采集助手"></iframe>
+  </div>
+</div>
+<div class="footer">
+  <p>本工具不提供心理诊断或医疗建议，仅用于咨询前信息辅助采集</p>
+</div>
+</body>
+</html>
